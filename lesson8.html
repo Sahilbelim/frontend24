@@ -16,23 +16,52 @@
 
             <table>
                 <tr>
+
+                    <td><label for="number2"> dob :</label></td>
+                    <td><input type="date" name="" id="number2" required placeholder="Enter date of birth "
+                            max="2023-07-01"></td>
+                </tr>
+                <tr>
                     <td><label for="number1"> number :</label></td>
-                    <td><input type="number" name="" id="number1" required placeholder="Enter first number" autofocus ></td>
+                    <td>
+                        <input type="number" name="" id="number1" required placeholder="Enter first number" autofocus
+                            min="1">
+                    </td>
                 </tr>
                 <tr>
 
                     <td><label for="number2"> number :</label></td>
                     <td><input type="number" name="" id="number2" required placeholder="Enter second number"></td>
                 </tr>
-                
-                
+
+
                 <tr>
                     <td></td>
                     <td><button type="button"> ADD(+) </button> &nbsp;&nbsp;<button type="button">Sub(-)</button></td>
                 </tr>
                 <tr>
-                <td></td>
-                    <td ><input type="number" name="" id="" value="5000"  readonly></td>
+                    <td></td>
+                    <td><input type="number" name="" id="" value="5000" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="file">Inser file</label></td>
+                    <td><input type="file" id="file" multiple ></td>
+                </tr>
+                <tr>
+                    <td><label for="file">Inser image</label></td>
+                    <td><input type="file" id="file" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td><label for="text-01">Enter card number :</label></td>
+                    <td><input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required placeholder="A0A 0A0"></td>
+                </tr>
+                <tr>
+                    <td><label for="text-01">Enter Adhar card number :</label></td>
+                    <td><input type="text" pattern="[0-9]{4} [0-9]{4} [0-9]{4}" required placeholder="0000 0000 0000"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="submit" formaction="success.html"></td>
                 </tr>
             </table>
         </form>
